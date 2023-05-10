@@ -1,0 +1,16 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/execution-graph",
+    "crates/fuzzer",
+    "crates/fuzzer2",
+    "naive",
+    "opt"
+]
+
+[workspace.package]
+version = "1.0.0"
+
+[workspace.dependencies]
+libafl = "0.10.0"
+

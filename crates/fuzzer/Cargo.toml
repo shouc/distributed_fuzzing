@@ -1,0 +1,10 @@
+[package]
+name = "fuzzer"
+version = "0.1.0"
+
+[dependencies]
+libafl = "0.10.0"
+serde = "1.0.162"
+libafl_targets = {version = "0.10.0", features = ["sancov_pcguard_hitcounts", "libfuzzer", "sancov_cmplog"]}
+mpi = { version = "0.6", features = ["user-operations", "derive"] }
+execution_graph = { path = "../execution-graph" }

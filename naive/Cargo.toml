@@ -1,0 +1,11 @@
+[package]
+name = "naive"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+fuzzer2 = { path = "../crates/fuzzer2"}
+mpi = { version = "0.6", features = ["user-operations", "derive"] }
+
